@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Колонизация Марса</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        ul#top-menu {
+            position: relative;
+        }
+        ul#top-menu li {
+            list-style: none;
+        }
+        ul#top-menu > li {
+            display: inline-block;
+        }
+        ul#top-menu > li ul#sub-menu {
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            padding-top: 10px;
+        }
+        ul#top-menu > li:hover ul#sub-menu {
+            display: block;
+        }
+        ul#sub-menu > li ul#sub-sub-menu {
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 60px;
+        }
+        ul#sub-menu > li:hover ul#sub-sub-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="top-menu">
+            <li>
+                <a href="#">
+                    Космические станции
+                    <ul id="sub-menu">
+                        <li>
+                            <a href="#">
+                              Салют
+                              <ul id="sub-sub-menu">
+                                <li><a href="#">Салют1</a></li>
+                                <li><a href="#">Салют3</a></li>
+                                <li><a href="#">Салют5</a></li>
+                              </ul>  
+                            </a>
+                        </li>
+                        <li><a href="#">Мир</a></li>
+                        <li><a href="#">МКС</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li><a href="#">Космические программы</a></li>
+            <li><a href="#">Ландшафты Марса</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
