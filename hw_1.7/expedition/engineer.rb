@@ -1,0 +1,2 @@
+class Engineer < Professional
+end
